@@ -71,9 +71,9 @@ public class TaskService : ITaskService
         if (tasks.Count() >= 20)
             throw new AppException("Project is tasks full.");
 
-        var user = _mapper.Map<Project>(model);
+        var task = _mapper.Map<Task>(model);
 
-        _context.Projects.Add(user);
+        _context.Tasks.Add(task);
         _context.SaveChanges();
     }
 

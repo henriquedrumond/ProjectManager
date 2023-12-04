@@ -42,9 +42,9 @@ namespace ProjectManagerApi.Services
             if (string.IsNullOrEmpty(model.Id.ToString()))
                 throw new AppException("Id is necessary");
 
-            var user = _mapper.Map<Project>(model);
+            var history = _mapper.Map<History>(model);
 
-            _context.Projects.Add(user);
+            _context.Histories.Add(history);
             _context.SaveChanges();
         }
 

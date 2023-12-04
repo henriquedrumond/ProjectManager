@@ -45,7 +45,7 @@ public class TaskController : ControllerBase
         return Ok(task);
     }
 
-    [HttpGet]
+    [HttpGet("{statusUser}")]
     public IActionResult GetPerformanceProjectId(StatusUser statusUser)
     {
         if (statusUser == StatusUser.Manager)
@@ -63,7 +63,7 @@ public class TaskController : ControllerBase
     public IActionResult Create(CreateTaskRequest model)
     {
          _taskService.Create(model);
-        return Ok(new { message = "Project created" });
+        return Ok(new { message = "Task created" });
     }
 
     [HttpPut("{id}")]
