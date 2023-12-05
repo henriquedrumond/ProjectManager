@@ -2,6 +2,9 @@
 
 Se teria algum outro recurso no futuro que podemos adiantar ou preparar.
 Sobre a arquitetura, se tem algo a comentar
+Sobre a quantidade de acessos, como sera?
+Sera somente 1 cliente a utiliar isso?
+
 
 # Melhorias
 
